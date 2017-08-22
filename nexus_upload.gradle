@@ -24,9 +24,14 @@ artifacts {
 uploadArchives {
     repositories {
         mavenDeployer {
+            snapshotRepository(url: NEXUS_SNAPSHOT_REPOSITORY_URL) {
+                authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
+            }
+
             repository(url: NEXUS_REPOSITORY_URL) {
                 authentication(userName: NEXUS_USERNAME, password: NEXUS_PASSWORD)
             }
+            
             pom.project {
                 name POM_NAME
                 version POM_VERSION
