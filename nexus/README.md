@@ -43,3 +43,9 @@ apply from: "https://raw.githubusercontent.com/iplanetcn/config/master/nexus/nex
 ```groovy
 apply from: "${rootDir}/library/nexus_upload.gradle
 ```
+
+
+## 3. open project terminal view, run script:
+```
+./gradlew bintrayArchives
+```
