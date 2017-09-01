@@ -1,4 +1,4 @@
-# jfrog
+# bintray
 > ##### upload android (library) to jfrog repository config.
 ## 1. config root project build.gradle like this:
 
@@ -59,16 +59,16 @@ ext {
 ### a. Online:👍
 open the library module build.gradle file, add blow scripts:
 ```groovy
-apply from: "https://raw.githubusercontent.com/iplanetcn/config/master/jfrog/jfrog_upload.gradle"
+apply from: "https://raw.githubusercontent.com/iplanetcn/config/master/bintray/bintray_upload.gradle"
 ```
 ### b. Offline:👻
-*a*. download the [jfrog_upload.gradle](https://raw.githubusercontent.com/iplanetcn/config/master/jfrog/jfrog_upload.gradle) file.
+*a*. download the [jfrog_upload.gradle](https://raw.githubusercontent.com/iplanetcn/config/master/bintray/bintray_upload.gradle) file.
 
-*b*. move the downloaded jfrog_upload.gradle to your android studio library module root folder.
+*b*. move the downloaded bintray_upload.gradle to your android studio library module root folder.
 
 *c*. open the library module build.gradle file. add blow scripts:
 ```groovy
-apply from: "${rootDir}/library/jfrog_upload.gradle
+apply from: "${rootDir}/library/bintray_upload.gradle
 ```
 
 ## 4. open project terminal view, run script:

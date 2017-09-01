@@ -9,5 +9,5 @@ Contains many useful configs.
 ### 2. [jitpack](./jitpack)
 > upload android (library) to jitpack repository config.
 
-### 3. [jfrog(jcenter)](./jfrog)
-> upload android (library) to jfrog repository config.
+### 3. [bintray(jcenter)](./bintray)
+> upload android (library) to bintray repository config.
