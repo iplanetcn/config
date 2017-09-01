@@ -7,7 +7,7 @@ Contains many useful configs.
 > upload android (library) to private nexus maven repository config.
 
 ### 2. [jitpack](./jitpack)
-> upload android (library) to private jitpack repository config.
+> upload android (library) to jitpack repository config.
 
 ### 3. [jfrog(jcenter)](./jfrog)
-> upload android (library) to private jfrog repository config.
+> upload android (library) to jfrog repository config.

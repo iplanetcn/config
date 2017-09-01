@@ -1,5 +1,5 @@
 # jitpack
-> ##### upload android (library) to private jitpack repository config.
+> ##### upload android (library) to jitpack repository config.
 ## 1. config root project build.gradle like this:
 
 ```groovy

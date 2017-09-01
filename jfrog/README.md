@@ -1,5 +1,5 @@
 # jfrog
-> ##### upload android (library) to private jfrog repository config.
+> ##### upload android (library) to jfrog repository config.
 ## 1. config root project build.gradle like this:
 
 ```groovy
