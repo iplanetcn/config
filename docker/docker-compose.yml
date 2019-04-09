@@ -7,7 +7,7 @@ services:
     container_name: compose_nexus
     restart: always
     volumes:
-      - /home/john/data/nexus:/nexus-data
+      - {$HOME}/data/nexus:/nexus-data
     ports:
       - 8081:8081
   # gitlab
@@ -21,9 +21,9 @@ services:
         external_url 'http://192.168.2.240'
         # Add any other gitlab.rb configuration here, each on its own line
     volumes:
-      - /home/john/data/gitlab/config:/etc/gitlab
-      - /home/john/data/gitlab/logs:/var/log/gitlab
-      - /home/john/data/gitlab/data:/var/opt/gitlab
+      - {$HOME}/data/gitlab/config:/etc/gitlab
+      - {$HOME}/data/gitlab/logs:/var/log/gitlab
+      - {$HOME}/data/gitlab/data:/var/opt/gitlab
     ports:
       - 80:80
       - 443:443
@@ -34,9 +34,9 @@ services:
     container_name: compose_httpd
     restart: always
     volumes:
-      - /home/john/data/apache-httpd/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
-      - /home/john/data/apache-httpd/htdocs/:/usr/local/apache2/htdocs/
-      - /home/john/data/apache-httpd/logs/:/usr/local/apache2/logs/
+      - {$HOME}/data/apache-httpd/conf/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      - {$HOME}/data/apache-httpd/htdocs/:/usr/local/apache2/htdocs/
+      - {$HOME}/data/apache-httpd/logs/:/usr/local/apache2/logs/
       - /etc/localtime:/etc/localtime:ro
     ports:
       - 9000:80
@@ -46,7 +46,7 @@ services:
     container_name: compose_jenkins
     restart: always
     volumes:
-      - /home/john/data/jenkins/home:/var/jenkins_home
+      - {$HOME}/data/jenkins/home:/var/jenkins_home
     ports:
       - 8080:8080
       - 50000:50000
@@ -56,6 +56,6 @@ services:
     container_name: compose_registry
     restart: always
     volumes:
-      - /home/john/data/registry/:/var/lib/registry
+      - {$HOME}/data/registry/:/var/lib/registry
     ports:
       - 5000:5000
