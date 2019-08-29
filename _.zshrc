@@ -116,14 +116,6 @@ source $ZSH/oh-my-zsh.sh
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
 export PATH=$PATH:$JAVA_HOME/bin
 
-# tft env
-export DEBUG_KEY_ALIAS='androiddebugkey'
-export DEBUG_KEY_PASSWORD='android'
-export DEBUG_STORE_PASSWORD='android'
-export KEY_ALIAS='laseripay'
-export KEY_PASSWORD='Opentsm2014)()!'
-export STORE_PASSWORD='Tecom2014)()!'
-
 # android sdk
 export PATH=${PATH}:/home/john/Android/Sdk/platform-tools
 export PATH=${PATH}:/home/john/Android/Sdk/tools
