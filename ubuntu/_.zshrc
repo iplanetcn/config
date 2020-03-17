@@ -128,9 +128,22 @@ alias txo="tmuxinator open"
 alias txs="tmuxinator start"
 alias txrm="tmuxinator delete"
 
+# Setup alias for proxy
+alias proxy='export http_proxy="http://127.0.0.1:7890/" && export https_proxy="http://127.0.0.1:7890/" && export socks5_proxy="socks5://127.0.0.1:7891/"'
+alias unproxy='unset http_proxy && unset https_proxy && unset socks5_proxy'
+
+alias snapproxy='sudo snap set system proxy.http="http://127.0.0.1:7890" && sudo snap set system proxy.https="http://127.0.0.1:7890"'
+alias snapunproxy='sudo snap unset system proxy.http && sudo snap unset system proxy.https'
+
 # setup path
 export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 export EDITOR=/usr/bin/vim
+
+alias python=python3
+
+alias install_theme='bash -c  "$(curl -sLo- https://git.io/vQgMr)"'
+
+alias show_themes='firefox -new-tab "https://mayccoll.github.io/Gogh/"'
 
 bindkey '^ ' autosuggest-accept
 autoload -U compinit && compinit
